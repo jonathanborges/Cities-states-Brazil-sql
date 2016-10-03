@@ -37,12 +37,12 @@ INSERT INTO `states` (`id`, `name`, `initials`) VALUES
 CREATE TABLE IF NOT EXISTS `cities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
-  `state` int(5) DEFAULT NULL,
+  `state_id` int(5) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_cities_states` (`state`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5565 ;
 
-INSERT INTO `cities` (`id`, `name`, `state`) VALUES
+INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
 (1, 'Afonso Cláudio', 8),
 (2, 'Água Doce do Norte', 8),
 (3, 'Águia Branca', 8),
@@ -2069,7 +2069,7 @@ INSERT INTO `cities` (`id`, `name`, `state`) VALUES
 (2024, 'Mariana', 11),
 (2025, 'Marilac', 11),
 (2026, 'Mário Campos', 11);
-INSERT INTO `cities` (`id`, `name`, `state`) VALUES
+INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
 (2027, 'Maripá de Minas', 11),
 (2028, 'Marliéria', 11),
 (2029, 'Marmelópolis', 11),
@@ -3937,7 +3937,7 @@ INSERT INTO `cities` (`id`, `name`, `state`) VALUES
 (3891, 'Benjamin Constant do Sul', 23),
 (3892, 'Bento Gonçalves', 23),
 (3893, 'Boa Vista das Missões', 23);
-INSERT INTO `cities` (`id`, `name`, `state`) VALUES
+INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
 (3894, 'Boa Vista do Buricá', 23),
 (3895, 'Boa Vista do Cadeado', 23),
 (3896, 'Boa Vista do Incra', 23),
