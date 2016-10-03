@@ -1,1 +1,2 @@
-# Cities-states-Brazil-sql
+# Cities and states from Brazil (SQL)
+## ;)
