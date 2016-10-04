@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `cities` (
   `name` varchar(120) DEFAULT NULL,
   `state_id` int(5) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_cities_states` (`state`)
+  KEY `fk_cities_states` (`state_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5565 ;
 
 INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
